@@ -10,5 +10,5 @@ fetch('../html/footer/footer.html')
 fetch('formulario_contacto.html')
 .then(response => response.text())
 .then(data => {
-    document.getElementById('container mt-5').innerHTML = data;
+    document.getElementById('mt-5').innerHTML = data;
 });
