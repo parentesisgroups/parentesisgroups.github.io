@@ -1,0 +1,6 @@
+/* Aseguramos que el iframe ocupe el 100% del contenedor y se adapte bien a la altura de la pantalla */
+iframe {
+    width: 100%;
+    height: 80vh; /* 80% de la altura de la ventana */
+    border: none;
+}
