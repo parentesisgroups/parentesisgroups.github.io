@@ -12,12 +12,12 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 -- -
--- nombre de la base de datos: `erp_bd`
+-- nombre de la base de datos: `plantilla_bd`
 -- -
 
 -- Selección de la base de datos para usar
-CREATE DATABASE IF NOT EXISTS `erp_bd` DEFAULT CHARACTER SET utf8 COLLATE utf8_spanish_ci;
-USE erp_bd;
+CREATE DATABASE IF NOT EXISTS `plantilla_bd` DEFAULT CHARACTER SET utf8 COLLATE utf8_spanish_ci;
+USE plantilla_bd;
 -- ------------------------------------------------------------------------------------------------------------
 -- ------------------------------------- TABLA 1 -------------------------------------------------------
 -- ------------------------------------------------------------------------------------------------------------ 
