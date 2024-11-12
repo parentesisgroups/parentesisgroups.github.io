@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactanos - Parentesis Group</title>
+    <!-- Links -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="../../css/html/contact/contact.css" rel="stylesheet">
+</head>
+<body>
 
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html">Parentesis Group</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,44 +18,27 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="services.html">Services</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
-                </li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item active"><a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a></li>
             </ul>
         </div>
     </nav>
-</head>
-<body>
 
-<!-- Div para el formulario de contacto -->
-<div>
-    <div class="container" id="mt-5"></div>
-</div>
-    
+    <!-- Contenedor principal para el formulario y el footer -->
+    <div class="container d-flex flex-column" style="min-height: 100vh;">
+        <!-- Div para el formulario de contacto -->
+        <div id="formulario-container" style="flex-grow: 1;"></div>
+
+        <!-- Div para el footer -->
+        <div id="footer-container" class="footer"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../../js/html/contact/contact.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
-
-<!-- Div para el footer -->
-<footer>
-     <div id="footer-container" class="footer"></div>
-</footer>
-
-
-
-
-
-<script src="../../js/html/contact/contact.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.1/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
 </html>
