@@ -16,5 +16,5 @@ function cargarHTML(ruta, contenedorId) {
 }
 
 // Usamos JavaScript para cargar el contenido del footer
-cargarHTML('../../html/footer/footer.html', 'footer-container');
 cargarHTML('../../html/menu/menu.html', 'menu-container');
+cargarHTML('../../html/footer/footer.html', 'footer-container');
