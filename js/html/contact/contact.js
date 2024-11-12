@@ -17,4 +17,4 @@ function cargarHTML(ruta, contenedorId) {
 
 // Cargar el formulario y el footer
 cargarHTML('../../html/contact/formulario_contacto.html', 'formulario-container');
-cargarHTML('../../html/contact/footer.html', 'footer-container');
+cargarHTML('../../html/footer/footer.html', 'footer-container');
