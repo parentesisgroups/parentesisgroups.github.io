@@ -6,17 +6,10 @@
     font-family: Arial, sans-serif;
 }
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f9f9f9;
-}
 
 /* Contenedor principal */
 .form-container {
-    display: flex;
+    display: center;
     max-width: 900px;
     padding: 20px;
     background-color: #ffffff;
