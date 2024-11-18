@@ -6,6 +6,13 @@
     font-family: Arial, sans-serif;
 }
 
+.body-2 {
+    display: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+}
 
 /* Contenedor principal */
 .form-container {
