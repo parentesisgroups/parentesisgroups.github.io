@@ -3,26 +3,32 @@
 
     <!-- Aqui va el Html -->
     <div class="form-container">
+      <h2>¿Quieres que te ayudemos a obtener resultados?</h2>
       <form id="contactForm" method="POST" action="https://formspree.io/f/your-id">
-          <h2>Contáctanos</h2>
-
-          <label for="firstName">Nombre:</label>
-          <input type="text" id="firstName" name="firstName" required>
-
-          <label for="lastName">Apellido:</label>
-          <input type="text" id="lastName" name="lastName" required>
-
-          <label for="email">Correo:</label>
-          <input type="email" id="email" name="email" required>
-
-          <label for="phone">Número Telefónico:</label>
-          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required>
-
-          <label for="message">Mensaje:</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-
+          <div class="form-row">
+              <input type="text" id="firstName" name="firstName" placeholder="Nombre" required>
+              <input type="text" id="company" name="company" placeholder="Empresa" required>
+          </div>
+          <div class="form-row">
+              <input type="email" id="email" name="email" placeholder="Email" required>
+              <input type="tel" id="phone" name="phone" placeholder="Teléfono" required>
+          </div>
+          <textarea id="message" name="message" placeholder="Mensaje" rows="4" required></textarea>
+          
+          <div class="privacy">
+              <input type="checkbox" id="privacy" name="privacy" required>
+              <label for="privacy">Acepto la <a href="#">Política de Privacidad</a></label>
+          </div>
+          
           <button type="submit">Enviar</button>
       </form>
+      
+      <div class="contact-info">
+          <p>Llámanos, escríbenos o ven:</p>
+          <p><strong>📞 +56 9 92389984</strong></p>
+          <p><strong>✉️ <a href="parentesisenterprise.com">parentesisenterprise.com</a></strong></p>
+          <p>📍 San Bernardo, Santiago<br>Chile</p>
+      </div>
   </div>
 
   <!-- Aqui van los Script -->

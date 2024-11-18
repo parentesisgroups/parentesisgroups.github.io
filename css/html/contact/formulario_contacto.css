@@ -8,66 +8,120 @@
 
 body {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     min-height: 100vh;
-    background-color: #f3f4f6;
+    background-color: #f9f9f9;
 }
 
 /* Contenedor del formulario */
 .form-container {
-    width: 100%;
-    max-width: 500px;
+    max-width: 800px;
     padding: 20px;
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 /* Título del formulario */
 h2 {
+    width: 100%;
     text-align: center;
-    color: #333333;
+    color: #333;
+    font-size: 1.5em;
     margin-bottom: 20px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
 }
 
-/* Etiquetas de los campos */
-label {
-    color: #555555;
-    margin-top: 10px;
-    display: block;
-    font-weight: bold;
+/* Formulario */
+form {
+    flex: 1;
+}
+
+/* Fila del formulario */
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
 }
 
 /* Campos de entrada y textarea */
-input, textarea {
+input[type="text"], input[type="email"], input[type="tel"], textarea {
     width: 100%;
     padding: 10px;
-    margin-top: 5px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    outline: none;
-    transition: border-color 0.3s ease;
+    font-size: 1em;
+    color: #333;
 }
 
-input:focus, textarea:focus {
-    border-color: #009688;
+textarea {
+    resize: none;
+}
+
+/* Sección de privacidad */
+.privacy {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.privacy input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.privacy label {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.privacy a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.privacy a:hover {
+    text-decoration: underline;
 }
 
 /* Botón de envío */
 button {
     width: 100%;
     padding: 10px;
-    margin-top: 20px;
-    background-color: #009688;
-    color: #ffffff;
+    background-color: #007bff;
+    color: #fff;
     border: none;
     border-radius: 4px;
+    font-size: 1.1em;
     cursor: pointer;
-    font-size: 16px;
     transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #00796b;
+    background-color: #0056b3;
+}
+
+/* Información de contacto */
+.contact-info {
+    flex: 1;
+    padding: 10px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
 }
