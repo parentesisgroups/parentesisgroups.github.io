@@ -33,14 +33,17 @@
           placeholder="Correo"
           required
           title="Introduce un correo válido."/>
-        <input
-        type="text"
-        id="asunto"
-        name="asunto"
-        placeholder="Asunto"
-        required
-        pattern="[a-zA-Z\s]+"
-        title="Usa solo letras y espacios."/>
+
+    <!-- Combo box for selecting a subject -->
+      <label for="asunto">Asunto</label>
+      <select id="asunto" name="asunto" required>
+          <option value="">Seleccione un asunto...</option>
+          <option value="Consultas por servicio">Consultas por servicio</option>
+          <option value="Sugerencias">Sugerencias</option>
+          <option value="Reclamos">Reclamos</option>
+          <option value="Otros">Otros</option>
+      </select>
+      
         <p>Tu Mensaje:</p>
         <textarea
         id="message"
