@@ -1,14 +1,11 @@
-<!-- Aqui van los Link -->
+
+<!-- Link a CSS -->
 <link href="../../css/html/contact/formulario_contacto.css" rel="stylesheet" />
 
-<!-- Aqui va el Html -->
 <div class="body-2">
   <div class="form-container">
     <h2>¿Necesitas mas información?, Contactate con nosotros:</h2>
-    <form
-      id="contactForm"
-      method="POST"
-      action="https://formspree.io/f/xzzbvzev">
+    <form id="contactForm" method="POST" action="https://formspree.io/f/xzzbvzev">
       <div class="form-row">
         <input
           type="text"
@@ -17,7 +14,10 @@
           placeholder="Nombre"
           required
           pattern="[a-zA-Z\s]+"
-          title="Usa solo letras y espacios."/>
+          title="Usa solo letras y espacios."
+        />
+      </div>
+      <div class="form-row">
         <input
           type="tel"
           id="phone"
@@ -25,31 +25,38 @@
           placeholder="Teléfono"
           required
           pattern="[0-9]{10,15}"
-          title="Debe tener entre 10 y 15 dígitos numéricos."/>
+          title="Debe tener entre 10 y 15 dígitos numéricos."
+        />
+      </div>
+      <div class="form-row">
         <input
           type="email"
           id="email"
           name="email"
           placeholder="Correo"
           required
-          title="Introduce un correo válido."/>
-    <!-- Combo box for selecting a subject -->  
-      <select id="asunto" name="asunto" type="dropdown" required>
+          title="Introduce un correo válido."
+        />
+      </div>
+
+      <!-- Combo box para seleccionar asunto -->
+      <div class="form-row" id="asunto-container">
+        <label for="asunto">Asunto</label>
+        <select id="asunto" name="asunto" required>
           <option value="">Seleccione un asunto...</option>
           <option value="Consultas por servicio">Consultas por servicio</option>
           <option value="Sugerencias">Sugerencias</option>
           <option value="Reclamos">Reclamos</option>
           <option value="Otros">Otros</option>
-      </select>
-        <label>Tu Mensaje:</label>
-        <textarea
-        id="message"
-        name="message"
-        placeholder="Mensaje"
-        rows="4"
-        required>
-        </textarea>
-       </div>
+        </select>
+      </div>
+
+      <!-- Campo de mensaje -->
+      <div class="form-row">
+        <label for="message">Tu Mensaje:</label>
+        <textarea id="message" name="message" placeholder="Mensaje" rows="4" required></textarea>
+      </div>
+
       <button type="submit">Enviar</button>
     </form>
 
@@ -57,9 +64,7 @@
       <p>Llámanos, escríbenos o ven:</p>
       <p><strong>📞 +56 9 92389984</strong></p>
       <p>
-        <strong>✉️
-          <a href="parentesisenterprise@gmail.com">parentesisenterprise@gmail.com</a>
-        </strong>
+        <strong>✉️ <a href="parentesisenterprise@gmail.com">parentesisenterprise@gmail.com</a></strong>
       </p>
       <p>📍 San Bernardo, Santiago de Chile</p>
     </div>

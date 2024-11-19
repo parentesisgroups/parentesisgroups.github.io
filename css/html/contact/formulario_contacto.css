@@ -3,20 +3,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Full viewport height */
-    background-color: #f0f0f0; /* Light gray background */
-    padding: 20px; /* Extra padding for small screens */
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    padding: 20px;
     box-sizing: border-box;
   }
   
   /* Form container */
   .form-container {
-    background-color: #fff; /* White background */
+    background-color: #fff;
     padding: 30px;
-    border-radius: 8px; /* Slightly more rounded corners */
+    border-radius: 8px;
     max-width: 500px;
-    width: 100%; /* Ensures responsiveness */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
   }
   
@@ -24,7 +24,7 @@
   .form-container h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #333; /* Darker text color */
+    color: #333;
   }
   
   /* Form rows */
@@ -36,38 +36,46 @@
   .form-row input[type="text"],
   .form-row input[type="email"],
   .form-row input[type="tel"],
-  .form-row select[type="dropdown"]
-  input[type="text"]#asunto,
+  #asunto-container select,
   textarea#message {
     width: 100%;
     padding: 12px;
+    font-size: 16px;
+    color: #333;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
-    font-size: 16px;
-    color: #333;
     transition: border-color 0.3s;
   }
   
-  /* Input focus state */
+  /* Combo box (select) */
+  #asunto-container select {
+    appearance: none;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24"><path fill="gray" d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 15px;
+  }
+  
+  /* Input and select focus state */
   .form-row input[type="text"]:focus,
   .form-row input[type="email"]:focus,
   .form-row input[type="tel"]:focus,
-  input[type="text"]#asunto:focus,
+  #asunto-container select:focus,
   textarea#message:focus {
-    border-color: #009eb3; /* Green border on focus */
+    border-color: #009eb3;
     outline: none;
   }
   
   /* Textarea */
   textarea#message {
-    resize: vertical; /* Allow vertical resize only */
-    height: 120px; /* Adjusted height */
+    resize: vertical;
+    height: 120px;
   }
   
   /* Submit button */
   button[type="submit"] {
-    background-color: #009eb3; /* Green color */
+    background-color: #009eb3;
     color: white;
     padding: 12px;
     border: none;
@@ -80,62 +88,27 @@
   
   /* Submit button hover state */
   button[type="submit"]:hover {
-    background-color: #009eb3; /* Darker green on hover */
+    background-color: #007b92;
   }
   
   /* Contact information */
   .contact-info {
     text-align: center;
     margin-top: 30px;
-    color: #555; /* Slightly lighter color for contact info */
+    color: #555;
   }
   
-  /* Contact info text */
   .contact-info p {
     margin: 5px 0;
     font-size: 14px;
   }
   
-  /* Link in contact info */
   .contact-info a {
-    color: #009eb3; /* Green color for the link */
-    text-decoration: none; /* Remove underline from link */
+    color: #009eb3;
+    text-decoration: none;
   }
   
   .contact-info a:hover {
-    text-decoration: underline; /* Underline on hover */
-  }
-
-  
-  /* Etiqueta del combo box de Asunto */
-  #asunto-container label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 16px;
-    color: #333;
-  }
-  
-  /* Combo box (select) de Asunto */
-  #asunto-container select {
-    
-    padding: 10px;
-    font-size: 16px;
-    color: #333;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    transition: border-color 0.3s ease;
-    appearance: none;
-    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24"><path fill="gray" d="M7 10l5 5 5-5z"/></svg>');
-    background-repeat: no-repeat;
-    background-position: right 10px center;
-    background-size: 15px;
-  }
-  
-  /* Efecto de borde en foco */
-  #asunto-container select:focus {
-    border-color: #4CAF50; /* Borde verde en foco */
-    outline: none;
+    text-decoration: underline;
   }
   
