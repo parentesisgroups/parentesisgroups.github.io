@@ -105,8 +105,40 @@
     text-decoration: underline; /* Underline on hover */
   }
 
-  label {
-    text-align: center;
-    margin-top: 30px;
-
+/* Estilo específico para el div del Asunto */
+.form-row#asunto-container {
+    margin-bottom: 15px;
   }
+  
+  /* Etiqueta del combo box de Asunto */
+  #asunto-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Combo box (select) de Asunto */
+  #asunto-container select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    appearance: none;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24"><path fill="gray" d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 15px;
+  }
+  
+  /* Efecto de borde en foco */
+  #asunto-container select:focus {
+    border-color: #4CAF50; /* Borde verde en foco */
+    outline: none;
+  }
+  
