@@ -1,138 +1,107 @@
-/* Reset de estilo general */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-
+/* Container for the entire form */
 .body-2 {
-    display: center;
+    display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background-color: #f9f9f9;
-}
-
-/* Contenedor principal */
-.form-container {
-    display: center;
-    max-width: 900px;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    gap: 30px;
-}
-
-/* Título del formulario */
-h2 {
-    width: 100%;
+    min-height: 100vh; /* Full viewport height */
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 20px; /* Extra padding for small screens */
+    box-sizing: border-box;
+  }
+  
+  /* Form container */
+  .form-container {
+    background-color: #fff; /* White background */
+    padding: 30px;
+    border-radius: 8px; /* Slightly more rounded corners */
+    max-width: 500px;
+    width: 100%; /* Ensures responsiveness */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+    box-sizing: border-box;
+  }
+  
+  /* Form title */
+  .form-container h2 {
     text-align: center;
-    color: #333;
-    font-size: 1.5em;
     margin-bottom: 20px;
-    border-bottom: 2px solid #007bff;
-    padding-bottom: 10px;
-}
-
-/* Formulario */
-form {
-    flex: 2;
-}
-
-/* Fila del formulario */
-.form-row {
-    display: flex;
-    gap: 15px;
+    color: #333; /* Darker text color */
+  }
+  
+  /* Form rows */
+  .form-row {
     margin-bottom: 15px;
-}
-
-/* Campos de entrada y textarea */
-input[type="text"], input[type="email"], input[type="tel"], textarea {
+  }
+  
+  /* Input fields */
+  .form-row input[type="text"],
+  .form-row input[type="email"],
+  .form-row input[type="tel"],
+  input[type="text"]#asunto,
+  textarea#message {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 1em;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
     color: #333;
-}
-
-textarea {
-    resize: none;
-}
-
-/* Sección de privacidad */
-.privacy {
-    display: flex;
-    align-items: center;
-    margin: 15px 0;
-}
-
-.privacy input[type="checkbox"] {
-    margin-right: 8px;
-}
-
-.privacy label {
-    font-size: 0.9em;
-    color: #555;
-}
-
-.privacy a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.privacy a:hover {
-    text-decoration: underline;
-}
-
-/* Botón de envío */
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
+    transition: border-color 0.3s;
+  }
+  
+  /* Input focus state */
+  .form-row input[type="text"]:focus,
+  .form-row input[type="email"]:focus,
+  .form-row input[type="tel"]:focus,
+  input[type="text"]#asunto:focus,
+  textarea#message:focus {
+    border-color: #4CAF50; /* Green border on focus */
+    outline: none;
+  }
+  
+  /* Textarea */
+  textarea#message {
+    resize: vertical; /* Allow vertical resize only */
+    height: 120px; /* Adjusted height */
+  }
+  
+  /* Submit button */
+  button[type="submit"] {
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    padding: 12px;
     border: none;
-    border-radius: 4px;
-    font-size: 1.1em;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-/* Información de contacto */
-.contact-info {
-    flex: 1;
-    padding: 10px;
-    font-size: 0.9em;
-    color: #555;
-    border-left: 1px solid #ddd;
-}
-
-.contact-info p {
-    margin-bottom: 10px;
-}
-
-.contact-info a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
-
-/* Estilo responsivo */
-@media (max-width: 768px) {
-    .form-container {
-        flex-direction: column;
-    }
-
-    h2 {
-        font-size: 1.2em;
-    }
-}
+    transition: background-color 0.3s;
+  }
+  
+  /* Submit button hover state */
+  button[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  /* Contact information */
+  .contact-info {
+    text-align: center;
+    margin-top: 30px;
+    color: #555; /* Slightly lighter color for contact info */
+  }
+  
+  /* Contact info text */
+  .contact-info p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  /* Link in contact info */
+  .contact-info a {
+    color: #4CAF50; /* Green color for the link */
+    text-decoration: none; /* Remove underline from link */
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
