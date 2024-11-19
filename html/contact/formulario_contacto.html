@@ -4,8 +4,10 @@
 
 <div class="body-2">
   <div class="form-container">
+
     <h2>¿Necesitas mas información?, Contactate con nosotros:</h2>
     <form id="contactForm" method="POST" action="https://formspree.io/f/xzzbvzev">
+
       <div class="form-row">
         <input
           type="text"
@@ -17,17 +19,26 @@
           title="Usa solo letras y espacios."
         />
       </div>
-      <div class="form-row">
-        <input
-          type="tel"
-          id="phone"
-          name="phone"
-          placeholder="Teléfono"
-          required
-          pattern="[0-9]{10,15}"
-          title="Debe tener entre 10 y 15 dígitos numéricos."
-        />
-      </div>
+
+      <!-- Campo de Teléfono con la Imagen de la Bandera -->
+        <div class="form-row">
+          <label for="phone">Teléfono</label>
+          <div style="display: flex; align-items: center;">
+              <img id="flag_phone" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/World_Flag_%282004%29.svg/640px-World_Flag_%282004%29.svg.png" 
+                  alt="Bandera del país" 
+                  style="width: 32px; height: 20px; display: inline; margin-right: 8px;" />
+              <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Teléfono"
+                  required
+                  oninput="asegurarMasYDetectarPais1(this)"
+                  pattern="[0-9+ ]{10,15}"
+                  title="Debe comenzar con el código de país, seguido del número (ej: +56999999999)" />
+              </div>
+            </div>
+
       <div class="form-row">
         <input
           type="email"
