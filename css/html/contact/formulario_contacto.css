@@ -105,10 +105,6 @@
     text-decoration: underline; /* Underline on hover */
   }
 
-/* Estilo específico para el div del Asunto */
-.form-row#asunto-container {
-    margin-bottom: 15px;
-  }
   
   /* Etiqueta del combo box de Asunto */
   #asunto-container label {
