@@ -7,14 +7,6 @@ document.getElementById('contactForm').addEventListener('submit', function (even
         event.preventDefault();
     }
 
-    // Validar teléfono
-    const phonePattern = /^[0-9]{9,13}$/;
-    const phone = document.getElementById('phone').value;
-    if (!phonePattern.test(phone)) {
-        alert('Teléfono inválido. Debe tener entre 9 y 13 dígitos.');
-        event.preventDefault();
-    }
-
     // Validar correo electrónico
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const mail = document.getElementById('mail').value;
