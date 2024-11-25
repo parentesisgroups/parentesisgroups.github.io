@@ -54,7 +54,7 @@
 }
 
 .footer-links i:hover {
-  transform: scale(1.2); /* Aumenta ligeramente el tamaño al pasar el cursor */
+  transform: scale(1.5); /* Aumenta ligeramente el tamaño al pasar el cursor */
 }
 
 /* Ajustes responsivos */
