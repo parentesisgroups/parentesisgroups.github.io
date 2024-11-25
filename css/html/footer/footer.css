@@ -1,84 +1,102 @@
+/* Estilo general para el footer */
 .footer {
   background-color: #343a40;
   color: white;
-  padding: 80px 0;
+  padding: 50px 20px; /* Ajustado para tamaños más pequeños */
   text-align: center;
-  margin-top: auto;
-  width: 100vw; /* Asegura que el footer ocupe todo el ancho de la ventana */
-  position: relative; /* Asegura que el footer siempre esté al final */
-  font-family: sans-serif;
+  font-family: 'Arial', sans-serif;
   text-transform: capitalize;
+  width: 100%; /* Elimina el uso de vw para mayor compatibilidad */
+  position: relative; /* Posicionamiento relativo */
+  margin-top: auto;
 }
 
-*{
+* {
   margin: 0;
-  padding: 0; 
+  padding: 0;
   box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px; /* Añade un padding para evitar bordes pegados */
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Distribuye los elementos de manera uniforme */
+  gap: 20px; /* Espaciado entre columnas */
+}
+
+.footer-links {
+  width: calc(25% - 30px); /* Mejor control del tamaño y espacio */
+  padding: 0 15px;
+}
+
+.footer-links h4 {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: 600;
+  border-bottom: 2px solid #00c3ff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.footer-links ul {
   list-style: none;
 }
 
-.container{
-  max-width:  1200px;
-  margin: 0 auto;
+.footer-links ul li a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  margin-bottom: 10px;
+  transition: padding-left 0.3s ease, color 0.3s ease;
 }
 
-.footer-row{
-display: flex;
-flex-wrap: wrap;
+.footer-links ul li a:hover {
+  color: #00c3ff; /* Cambia el color en hover */
+  padding-left: 6px;
 }
 
-.footer-links{
-width: 25%;
-padding:0 15px;
-  }
-
-  
-.footer-links h4{
-font-size: 25px;
-color:#ffffff;
-margin-bottom: 25px;
-font-weight: 500;
-border-bottom: 2px solid #00c3ff;
-display: inline-block;
-}
-
-.footer-links ul li a{
-font-size: 18 px;
-text-decoration: none;
-color:#ffffff;
-display: block;
-margin-bottom: 15px;
-transition: all .3s ease;
-}
-
-footer-links ul li a:hover{
-color:#ffffff;
-padding-left: 6px;
-}
-
+/* Estilo para los enlaces sociales */
 .social-link a {
-
-display: inline-block;
-min-height: 40px;
-width: 40px;
-background-color: #343a40;
-margin: 0 10px 10px 0;
-text-align: 40px;
-border-radius: 50%;
-color: #ffffff;
-transition: all .5s ease;
+  display: inline-flex; /* Mejor alineación */
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  background-color: #343a40;
+  margin: 0 5px; /* Ajusta el espacio entre íconos */
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 18px; /* Asegura que los íconos sean visibles */
+  transition: background-color 0.5s ease, transform 0.3s ease;
 }
 
-.social-link a:hover{
-background-color:#00c3ff;
+.social-link a:hover {
+  background-color: #00c3ff;
+  transform: scale(1.1); /* Efecto de agrandamiento */
 }
 
-@media(max-width:991px){
-  .footer-row{
+/* Media queries para dispositivos más pequeños */
+@media (max-width: 991px) {
+  .footer-row {
+    flex-direction: column; /* Apila los elementos en una columna */
+    align-items: center;
     text-align: center;
   }
-  .footer-links{
+
+  .footer-links {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+  }
+
+  .social-link {
+    margin-top: 20px;
   }
 }
