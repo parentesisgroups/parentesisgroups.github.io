@@ -1,102 +1,71 @@
-/* Estilo general para el footer */
+/* Estilos generales */
 .footer {
-  background-color: #343a40;
-  color: white;
-  padding: 50px 20px; /* Ajustado para tamaños más pequeños */
-  text-align: center;
-  font-family: 'Arial', sans-serif;
-  text-transform: capitalize;
-  width: 100%; /* Elimina el uso de vw para mayor compatibilidad */
-  position: relative; /* Posicionamiento relativo */
-  margin-top: auto;
+  background-color: #007bff; /* Azul celeste oscuro */
+  color: #f8f9fa; /* Blanco claro */
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
 }
 
-* {
-  margin: 0;
+.footer h4 {
+  color: #ffffff; /* Blanco */
+  margin-bottom: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.footer a {
+  color: #a3d5ff; /* Azul celeste más claro */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #ffffff; /* Cambia a blanco al pasar el cursor */
+}
+
+.footer ul {
+  list-style: none;
   padding: 0;
-  box-sizing: border-box;
+  margin: 0;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px; /* Añade un padding para evitar bordes pegados */
+.footer li {
+  margin-bottom: 10px;
 }
 
+/* Diseño de las columnas */
 .footer-row {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  justify-content: space-between; /* Distribuye los elementos de manera uniforme */
-  gap: 20px; /* Espaciado entre columnas */
 }
 
 .footer-links {
-  width: calc(25% - 30px); /* Mejor control del tamaño y espacio */
-  padding: 0 15px;
+  flex: 1 1 30%;
+  margin: 10px;
+  min-width: 200px;
 }
 
-.footer-links h4 {
-  font-size: 20px;
-  color: #ffffff;
-  margin-bottom: 20px;
-  font-weight: 600;
-  border-bottom: 2px solid #00c3ff;
-  display: inline-block;
-  padding-bottom: 5px;
+/* Iconos sociales */
+.footer-links i {
+  font-size: 18px;
+  margin-right: 10px;
+  transition: transform 0.3s;
 }
 
-.footer-links ul {
-  list-style: none;
+.footer-links i:hover {
+  transform: scale(1.2); /* Aumenta ligeramente el tamaño al pasar el cursor */
 }
 
-.footer-links ul li a {
-  font-size: 16px;
-  text-decoration: none;
-  color: #ffffff;
-  display: block;
-  margin-bottom: 10px;
-  transition: padding-left 0.3s ease, color 0.3s ease;
-}
-
-.footer-links ul li a:hover {
-  color: #00c3ff; /* Cambia el color en hover */
-  padding-left: 6px;
-}
-
-/* Estilo para los enlaces sociales */
-.social-link a {
-  display: inline-flex; /* Mejor alineación */
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  width: 40px;
-  background-color: #343a40;
-  margin: 0 5px; /* Ajusta el espacio entre íconos */
-  border-radius: 50%;
-  color: #ffffff;
-  font-size: 18px; /* Asegura que los íconos sean visibles */
-  transition: background-color 0.5s ease, transform 0.3s ease;
-}
-
-.social-link a:hover {
-  background-color: #00c3ff;
-  transform: scale(1.1); /* Efecto de agrandamiento */
-}
-
-/* Media queries para dispositivos más pequeños */
-@media (max-width: 991px) {
+/* Ajustes responsivos */
+@media (max-width: 768px) {
   .footer-row {
-    flex-direction: column; /* Apila los elementos en una columna */
-    align-items: center;
-    text-align: center;
+      flex-direction: column;
+      align-items: center;
   }
 
   .footer-links {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .social-link {
-    margin-top: 20px;
+      text-align: center;
+      margin-bottom: 20px;
   }
 }
