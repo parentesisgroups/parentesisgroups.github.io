@@ -1,0 +1,17 @@
+# Ignorar archivos de configuración y credenciales
+.env
+# config.json
+
+# Ignorar carpetas de dependencias y compilación
+# node_modules/
+# dist/
+# build/
+
+# Ignorar archivos del sistema operativo
+# .DS_Store
+# Thumbs.db
+
+# Ignorar archivos temporales
+*.log
+*.tmp
+.history

@@ -1,0 +1,4 @@
+Colores del logo: 
+
+Parte derecha: rgba(0,233,254,255) -------> #00e9fe
+Parte Izquierda y central: rgba(1,102,255,255) -------> #0166ff
