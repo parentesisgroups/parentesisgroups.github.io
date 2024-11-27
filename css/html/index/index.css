@@ -1,6 +1,7 @@
 
 
 #contenedor-general {
+    display: center;
     width: 90%;
     height: auto;
     display: grid;
