@@ -5,13 +5,14 @@
 
 #contenedor-general-1 {
     width: 80%; /* 90% menos 10% a la izquierda y derecha */
-    height: auto;
+    height: 250px;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 25% 75%;
     gap: 0;
     border: 2px solid #ccc;
     margin: 0 auto; /* Centrar horizontalmente */
+    margin-top: auto;
 }
 
 
