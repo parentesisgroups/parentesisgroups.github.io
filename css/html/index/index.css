@@ -2,6 +2,7 @@
     display: center;
     width: 100%; /* 90% menos 10% a la izquierda y derecha */
     height: 350px;
+    margin-top: 2%;
 }
 
 #contenedor-general-1 {
@@ -13,7 +14,7 @@
     gap: 10px; /* Espaciado uniforme entre contenedores */
     border: auto solid #ccc;
     margin: 0 auto; /* Centrar horizontalmente */
-    margin-top: auto;
+   
 }
 
 .titulo-1 {
