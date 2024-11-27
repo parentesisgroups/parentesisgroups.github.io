@@ -1,7 +1,10 @@
-
-
 #contenedor-general {
     display: center;
+
+}
+
+#contenedor-general-1 {
+    
     width: 90%;
     height: auto;
     display: grid;
