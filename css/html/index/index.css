@@ -1,6 +1,7 @@
 #contenedor-general {
     display: center;
-
+    width: 100%; /* 90% menos 10% a la izquierda y derecha */
+    height: 350px;
 }
 
 #contenedor-general-1 {
@@ -9,12 +10,11 @@
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 25% 75%;
-    gap: 0;
-    border: 2px solid #ccc;
+    gap: 10px; /* Espaciado uniforme entre contenedores */
+    border: auto solid #ccc;
     margin: 0 auto; /* Centrar horizontalmente */
     margin-top: auto;
 }
-
 
 .titulo-1 {
     grid-column: 1 / 2;
