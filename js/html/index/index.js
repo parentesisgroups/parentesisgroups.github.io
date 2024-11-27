@@ -15,6 +15,13 @@ function cargarHTML(ruta, contenedorId) {
         });
 }
 
-// Usamos JavaScript para cargar el contenido del footer
+//  para cargar el contenido del menu
 cargarHTML('../../html/menu/menu.html', 'menu-container');
+
+//  para cargar el contenido de la pagina
+cargarHTML('../../html/index/contenedor-1.html', 'contenedor-1');
+cargarHTML('../../html/index/contenedor-2.html', 'contenedor-2');
+cargarHTML('../../html/index/contenedor-3.html', 'contenedor-3');
+
+//  para cargar el contenido del footer
 cargarHTML('../../html/footer/footer.html', 'footer-container');

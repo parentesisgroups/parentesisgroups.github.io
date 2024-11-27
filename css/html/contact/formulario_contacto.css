@@ -1,114 +1,114 @@
 /* Container for the entire form */
 .body-2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f0f0f0;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-  
-  /* Form container */
-  .form-container {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    max-width: 500px;
-    width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
-  }
-  
-  /* Form title */
-  .form-container h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  /* Form rows */
-  .form-row {
-    margin-bottom: 15px;
-  }
-  
-  /* Input fields */
-  .form-row input[type="text"],
-  .form-row input[type="email"],
-  .form-row input[type="tel"],
-  #asunto-container select,
-  textarea#message {
-    width: 100%;
-    padding: 12px;
-    font-size: 16px;
-    color: #333;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    transition: border-color 0.3s;
-  }
-  
-  /* Combo box (select) */
-  #asunto-container select {
-    appearance: none;
-    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24"><path fill="gray" d="M7 10l5 5 5-5z"/></svg>');
-    background-repeat: no-repeat;
-    background-position: right 10px center;
-    background-size: 15px;
-  }
-  
-  /* Input and select focus state */
-  .form-row input[type="text"]:focus,
-  .form-row input[type="email"]:focus,
-  .form-row input[type="tel"]:focus,
-  #asunto-container select:focus,
-  textarea#message:focus {
-    border-color: #009eb3;
-    outline: none;
-  }
-  
-  /* Textarea */
-  textarea#message {
-    resize: vertical;
-    height: 120px;
-  }
-  
-  /* Submit button */
-  button[type="submit"] {
-    background-color: #009eb3;
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    width: 100%;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  /* Submit button hover state */
-  button[type="submit"]:hover {
-    background-color: #007b92;
-  }
-  
-  /* Contact information */
-  .contact-info {
-    text-align: center;
-    margin-top: 30px;
-    color: #555;
-  }
-  
-  .contact-info p {
-    margin: 5px 0;
-    font-size: 14px;
-  }
-  
-  .contact-info a {
-    color: #009eb3;
-    text-decoration: none;
-  }
-  
-  .contact-info a:hover {
-    text-decoration: underline;
-  }
-  
+  display: flex; /* Usamos flexbox para centrar el contenido */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  min-height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la pantalla */
+  background-color: #f0f0f0; /* Fondo gris claro */
+  padding: 20px; /* Espaciado interno */
+  box-sizing: border-box; /* Incluye el padding en el cálculo del tamaño total */
+}
+
+/* Form container */
+.form-container {
+  background-color: #fff; /* Fondo blanco para el formulario */
+  padding: 30px; /* Espaciado interno del formulario */
+  border-radius: 8px; /* Bordes redondeados */
+  max-width: 500px; /* Ancho máximo del formulario */
+  width: 100%; /* El formulario ocupa todo el ancho disponible hasta el máximo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  box-sizing: border-box; /* Incluye el padding y border en el cálculo del tamaño total */
+}
+
+/* Form title */
+.form-container h2 {
+  text-align: center; /* Centra el título */
+  margin-bottom: 20px; /* Espacio debajo del título */
+  color: #333; /* Color oscuro para el texto */
+}
+
+/* Form rows */
+.form-row {
+  margin-bottom: 15px; /* Espacio entre los elementos del formulario */
+}
+
+/* Input fields */
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row input[type="tel"],
+#asunto-container select,
+textarea#message {
+  width: 100%; /* Los campos ocupan el 100% del ancho disponible */
+  padding: 12px; /* Espaciado dentro de los campos */
+  font-size: 16px; /* Tamaño de fuente */
+  color: #333; /* Color del texto */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 5px; /* Bordes redondeados */
+  box-sizing: border-box; /* Incluye el padding en el cálculo del tamaño total */
+  transition: border-color 0.3s; /* Transición suave para el cambio de color de borde */
+}
+
+/* Combo box (select) */
+#asunto-container select {
+  appearance: none; /* Elimina el estilo predeterminado del combo */
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24"><path fill="gray" d="M7 10l5 5 5-5z"/></svg>'); /* Flecha para el select */
+  background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+  background-position: right 10px center; /* Posiciona la flecha a la derecha */
+  background-size: 15px; /* Tamaño de la flecha */
+}
+
+/* Input and select focus state */
+.form-row input[type="text"]:focus,
+.form-row input[type="email"]:focus,
+.form-row input[type="tel"]:focus,
+#asunto-container select:focus,
+textarea#message:focus {
+  border-color: #009eb3; /* Color del borde cuando el campo está enfocado */
+  outline: none; /* Elimina el contorno del campo enfocado */
+}
+
+/* Textarea */
+textarea#message {
+  resize: vertical; /* Permite redimensionar el área de texto verticalmente */
+  height: 120px; /* Altura inicial del área de texto */
+}
+
+/* Submit button */
+button[type="submit"] {
+  background-color: #009eb3; /* Fondo azul para el botón */
+  color: white; /* Texto blanco */
+  padding: 12px; /* Espaciado interno */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño de fuente */
+  width: 100%; /* El botón ocupa todo el ancho disponible */
+  cursor: pointer; /* Cambia el cursor a puntero */
+  transition: background-color 0.3s; /* Transición suave al cambiar el color de fondo */
+}
+
+/* Submit button hover state */
+button[type="submit"]:hover {
+  background-color: #007b92; /* Cambia el fondo del botón cuando el cursor está sobre él */
+}
+
+/* Contact information */
+.contact-info {
+  text-align: center; /* Centra el texto de la información de contacto */
+  margin-top: 30px; /* Espacio superior */
+  color: #555; /* Color gris oscuro */
+}
+
+.contact-info p {
+  margin: 5px 0; /* Espaciado entre párrafos */
+  font-size: 14px; /* Tamaño de fuente */
+}
+
+.contact-info a {
+  color: #009eb3; /* Color azul para los enlaces */
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+/* Contact information link hover state */
+.contact-info a:hover {
+  text-decoration: underline; /* Subraya el enlace cuando el cursor está sobre él */
+}

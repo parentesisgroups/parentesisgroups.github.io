@@ -1,72 +1,80 @@
-/* Estilos generales */
+/* Estilos generales para el footer */
 .footer {
-  background-color: #292929; /* Azul celeste oscuro */
-  color: #f8f9fa; /* Blanco claro */
-  padding: 40px 20px;
-  font-family: Arial, sans-serif;
+  background-color: #292929; /* Azul oscuro para el fondo del footer */
+  color: #f8f9fa; /* Color blanco claro para el texto */
+  padding: 40px 20px; /* Espaciado dentro del footer */
+  font-family: Arial, sans-serif; /* Fuente del texto */
+  margin-top: 0%; /* Sin margen superior */
 }
 
+/* Estilos para los encabezados dentro del footer */
 .footer h4 {
-  color: #ffffff; /* Blanco */
-  margin-bottom: 15px;
-  font-size: 18px;
-  text-transform: uppercase;
+  color: #ffffff; /* Color blanco para los encabezados */
+  margin-bottom: 15px; /* Espacio debajo del encabezado */
+  font-size: 18px; /* Tamaño del texto */
+  text-transform: uppercase; /* Transforma el texto a mayúsculas */
 }
 
+/* Estilos para los enlaces dentro del footer */
 .footer a {
-  color: #a3d5ff; /* Azul celeste más claro */
-  text-decoration: none;
-  transition: color 0.3s;
+  color: #a3d5ff; /* Azul celeste claro para los enlaces */
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  transition: color 0.3s; /* Transición suave al cambiar el color */
 }
 
+/* Estilos para los enlaces al pasar el cursor sobre ellos */
 .footer a:hover {
-  color: #ffffff; /* Cambia a blanco al pasar el cursor */
+  color: #ffffff; /* Cambia el color a blanco cuando el cursor está sobre el enlace */
 }
 
+/* Estilos para la lista dentro del footer */
 .footer ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  list-style: none; /* Elimina los puntos de la lista */
+  padding: 0; /* Elimina el padding por defecto */
+  margin: 0; /* Elimina el margen por defecto */
 }
 
+/* Estilos para cada ítem de la lista en el footer */
 .footer li {
-  margin-bottom: 10px;
+  margin-bottom: 10px; /* Espacio entre los ítems de la lista */
 }
 
-/* Diseño de las columnas */
+/* Diseño de las columnas dentro del footer */
 .footer-row {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: flex; /* Usamos flexbox para organizar las columnas */
+  justify-content: space-between; /* Espacio uniforme entre las columnas */
+  flex-wrap: wrap; /* Permite que las columnas se ajusten en varias filas en pantallas pequeñas */
 }
 
+/* Estilos para los enlaces dentro de cada columna */
 .footer-links {
-  flex: 1 1 30%;
-  margin: 10px;
-  min-width: 200px;
+  flex: 1 1 30%; /* Cada columna ocupa un 30% del ancho disponible */
+  margin: 10px; /* Espacio alrededor de cada columna */
+  min-width: 200px; /* Ancho mínimo de cada columna */
 }
 
-/* Iconos sociales */
+/* Estilos para los íconos sociales dentro del footer */
 .footer-links i {
-  font-size: 18px;
-  margin-right: 10px;
-  transition: transform 0.3s;
-  display: inline-block; /* Asegurar alineación horizontal */
+  font-size: 18px; /* Tamaño de los íconos */
+  margin-right: 10px; /* Espacio entre los íconos */
+  transition: transform 0.3s; /* Transición suave al cambiar el tamaño de los íconos */
+  display: inline-block; /* Asegura que los íconos estén alineados horizontalmente */
 }
+
+/* Efecto de aumento al pasar el cursor sobre los íconos */
 .footer-links i:hover {
-  transform: scale(1.5); /* Aumenta ligeramente el tamaño al pasar el cursor */
-
+  transform: scale(1.5); /* Aumenta el tamaño de los íconos al pasar el cursor */
 }
 
-/* Ajustes responsivos */
+/* Ajustes responsivos para pantallas pequeñas */
 @media (max-width: 768px) {
   .footer-row {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column; /* Coloca las columnas en una sola columna en pantallas pequeñas */
+    align-items: center; /* Centra las columnas */
   }
 
   .footer-links {
-      text-align: center;
-      margin-bottom: 20px;
+    text-align: center; /* Centra el texto de los enlaces en pantallas pequeñas */
+    margin-bottom: 20px; /* Espacio inferior entre las columnas */
   }
 }

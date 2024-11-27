@@ -15,8 +15,12 @@ function cargarHTML(ruta, contenedorId) {
         });
 }
 
-// Cargar el formulario y el footer
+//  para cargar el contenido del menu
 cargarHTML('../../html/menu/menu.html', 'menu-container');
+
+//  para cargar el contenido de la pagina
 cargarHTML('../../html/contact/formulario_contacto.html', 'formulario-container');
+
+//  para cargar el contenido del footer
 cargarHTML('../../html/footer/footer.html', 'footer-container');
 
