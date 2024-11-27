@@ -1,9 +1,0 @@
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-}
-.jumbotron {
-    background-color: #f8f9fa;
-    padding: 2rem 1rem;
-}

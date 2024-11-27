@@ -51,9 +51,8 @@
   font-size: 18px;
   margin-right: 10px;
   transition: transform 0.3s;
-  display: inline-block;
+  display: inline-block; /* Asegurar alineación horizontal */
 }
-
 .footer-links i:hover {
   transform: scale(1.5); /* Aumenta ligeramente el tamaño al pasar el cursor */
 
