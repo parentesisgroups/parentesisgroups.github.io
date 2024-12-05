@@ -1,0 +1,15 @@
+/* Botón de WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px; /* 20px desde el fondo */
+    right: 20px;  /* 20px desde el borde derecho */
+    z-index: 1000; /* Para asegurarse de que el botón siempre esté arriba */
+    transition: all 0.3s ease-in-out;
+}
+
+/* imagen del Botón de WhatsApp */
+.whatsapp-button img {
+    width: 60px; /* Tamaño del icono */
+    height: auto;
+    border-radius: 50%; /* Redondea la imagen */
+}

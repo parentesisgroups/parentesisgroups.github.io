@@ -23,5 +23,9 @@ cargarHTML('../../html/index/contenedor-1.html', 'contenedor-1');
 cargarHTML('../../html/index/contenedor-2.html', 'contenedor-2');
 cargarHTML('../../html/index/contenedor-3.html', 'contenedor-3');
 
+//  para cargar Componentes extras
+cargarHTML('../../html/rrss/rrss.html', 'rrss-contenedor');
+
+
 //  para cargar el contenido del footer
 cargarHTML('../../html/footer/footer.html', 'footer-container');

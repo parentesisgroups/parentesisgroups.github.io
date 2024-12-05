@@ -18,5 +18,9 @@ function cargarHTML(ruta, contenedorId) {
 // Usamos JavaScript para cargar el contenido del menu
 cargarHTML('../../html/menu/menu.html', 'menu-container');
 
+
+//  para cargar Componentes extras
+cargarHTML('../../html/rrss/rrss.html', 'rrss-contenedor');
+
 // Usamos JavaScript para cargar el contenido del footer
 cargarHTML('../../html/footer/footer.html', 'footer-container');

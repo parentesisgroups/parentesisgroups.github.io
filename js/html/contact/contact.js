@@ -21,6 +21,10 @@ cargarHTML('../../html/menu/menu.html', 'menu-container');
 //  para cargar el contenido de la pagina
 cargarHTML('../../html/contact/formulario_contacto.html', 'formulario-container');
 
+
+//  para cargar Componentes extras
+cargarHTML('../../html/rrss/rrss.html', 'rrss-contenedor');
+
 //  para cargar el contenido del footer
 cargarHTML('../../html/footer/footer.html', 'footer-container');
 

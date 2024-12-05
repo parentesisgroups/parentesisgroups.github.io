@@ -18,5 +18,13 @@ function cargarHTML(ruta, contenedorId) {
 // Usamos JavaScript para cargar el contenido del menu
 cargarHTML('../../html/menu/menu.html', 'menu-container');
 
+//  para cargar el contenido de la pagina
+cargarHTML('../../html/about/sobre_nosotros.html', 'sobre_nosotros');
+cargarHTML('../../html/about/nuestro_equipo.html', 'nuestro_equipo');
+cargarHTML('../../html/about/mision_vision.html', 'mision_vision');
+
+//  para cargar Componentes extras
+cargarHTML('../../html/rrss/rrss.html', 'rrss-contenedor');
+
 // Usamos JavaScript para cargar el contenido del footer
 cargarHTML('../../html/footer/footer.html', 'footer-container');
