@@ -1,29 +1,38 @@
-    // JavaScript para el carrusel
-    const slides = document.querySelector('.banner-slides');
-    const totalSlides = document.querySelectorAll('.banner-slide').length;
-    const prevButton = document.getElementById('prev');
-    const nextButton = document.getElementById('next');
-    let currentIndex = 0;
+document.addEventListener('DOMContentLoaded', () => {
+    let currentSlide = 0;
 
-    function updateCarousel() {
-        slides.style.transform = `translateX(-${currentIndex * 100}%)`;
-        prevButton.disabled = currentIndex === 0;
-        nextButton.disabled = currentIndex === totalSlides - 1;
+    function showSlide(index) {
+        const slides = document.querySelectorAll('.carousel-item-2');
+        const totalSlides = slides.length;
+
+        if (index < 0) {
+            currentSlide = totalSlides - 1;
+        } else if (index >= totalSlides) {
+            currentSlide = 0;
+        } else {
+            currentSlide = index;
+        }
+
+        const carouselContent = document.querySelector('.carousel-content-2');
+        carouselContent.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === currentSlide);
+        });
     }
 
-    prevButton.addEventListener('click', () => {
-        if (currentIndex > 0) {
-            currentIndex--;
-            updateCarousel();
-        }
-    });
+    function prevSlide() {
+        showSlide(currentSlide - 1);
+    }
 
-    nextButton.addEventListener('click', () => {
-        if (currentIndex < totalSlides - 1) {
-            currentIndex++;
-            updateCarousel();
-        }
-    });
+    function nextSlide() {
+        showSlide(currentSlide + 1);
+    }
 
-    // Actualiza el carrusel al cargar
-    updateCarousel();
+    // Hacer las funciones globales (opcional, pero útil en este caso)
+    window.prevSlide = prevSlide;
+    window.nextSlide = nextSlide;
+
+    // Inicializar el carrusel
+    showSlide(0);
+});

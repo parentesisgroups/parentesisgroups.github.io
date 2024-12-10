@@ -22,6 +22,7 @@ cargarHTML('../../html/menu/menu.html', 'menu-container');
 cargarHTML('../../html/about/sobre_nosotros.html', 'sobre_nosotros');
 cargarHTML('../../html/about/nuestro_equipo.html', 'nuestro_equipo');
 cargarHTML('../../html/about/mision_vision.html', 'mision_vision');
+cargarHTML('../../html/about/contenedor_dinamico.html', 'contenedor_dinamico');
 
 //  para cargar Componentes extras
 cargarHTML('../../html/rrss/rrss.html', 'rrss-contenedor');

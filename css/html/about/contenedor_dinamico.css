@@ -1,0 +1,136 @@
+.contenedor-dinamico {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    background: #ffffff;
+}
+
+.container-d {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+    max-width: 1200px;
+}
+
+.valores-persona,
+.valores-negocio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.valores-negocio {
+    align-items: flex-start;
+}
+
+.valor {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 300px;
+    padding: 10px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.valor .icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.logo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.logo-circle {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+/* Imagen de fondo circular */
+.logo-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 350px; /* Aumenta el tamaño de la imagen */
+    height: 350px; /* Mantén las proporciones del círculo */
+    background-image: url('../../../imagenes/logo.jpg'); /* Ruta de la imagen */
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%; /* Hace que la imagen sea circular */
+    opacity: 0.8; /* Ajusta la transparencia (0.2 = 20% visible) */
+    transform: translate(-50%, -50%); /* Centra la imagen dentro del contenedor */
+    z-index: 1; /* Coloca la imagen detrás del texto giratorio */
+}
+
+/* Texto SVG que gira alrededor */
+.circle-svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: rotateText 20s linear infinite; /* Velocidad lenta (20s) */
+    z-index: 2; /* Coloca el texto sobre la imagen */
+}
+
+circle {
+    stroke: #d3d3d3;
+    stroke-dasharray: 5, 5;
+    fill: none;
+}
+
+text {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    fill: rgb(20, 76, 207);
+    letter-spacing: 2px;
+}
+
+.logo-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 3; /* Contenido sobre el resto */
+}
+
+.logo-content h1 {
+    font-size: 24px;
+    color: #900;
+    margin: 0;
+}
+
+/* Animación para girar el texto hacia la izquierda */
+@keyframes rotateText {
+    from {
+        transform: rotate(0deg); /* Inicia en la posición inicial */
+    }
+    to {
+        transform: rotate(-360deg); /* Gira hacia la izquierda completando una vuelta */
+    }
+}
+
+a.valor {
+    text-decoration: none;
+    color: inherit;
+    display: flex; /* Asegura la alineación flex de los elementos */
+}
+
+a.valor:hover {
+    opacity: 0.9; /* Efecto visual al pasar el cursor */
+}
+
