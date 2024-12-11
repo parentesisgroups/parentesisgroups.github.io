@@ -1,0 +1,79 @@
+/* Estilos para el contenedor general (contenedor-2) */
+#contenedor-general-2 {
+    width: 70%; /* 70% de ancho para el contenedor */
+    height: 180px; /* Altura fija del contenedor */
+    margin: 20px auto; /* Centrado horizontal y margen superior de 20px */
+    justify-content: center; /* Centrado de contenido (aunque 'justify-content' no tiene efecto aquí) */
+    align-items: center; /* Centrado de contenido (aunque 'align-items' no tiene efecto aquí) */
+    position: center; /* 'position: center' no es válido, usar 'center' como propiedad es incorrecto */
+    border: 2px solid #ccc; /* Borde de color gris claro */
+    background-color: #f0f0f0; /* Fondo gris claro */
+    margin-top: 50px; /* Margen superior de 50px */
+}
+
+/* Estilos para el contenedor del carrusel */
+.carousel-2 {
+    width: 100%; /* El carrusel ocupa el 100% del ancho del contenedor */
+    height: 100%; /* El carrusel ocupa el 100% de la altura del contenedor */
+    overflow: hidden; /* Oculta cualquier contenido fuera del área visible */
+    position: relative; /* Posicionamiento relativo para los elementos dentro del carrusel */
+    display: flex; /* Usamos flexbox para el contenido del carrusel */
+    align-items: center; /* Centrado vertical de los elementos del carrusel */
+}
+
+/* Contenedor de las imágenes o elementos dentro del carrusel */
+.carousel-content-2 {
+    display: flex; /* Usamos flexbox para organizar los elementos horizontalmente */
+    transition: transform 0.5s ease-in-out; /* Animación suave al mover los elementos */
+}
+
+/* Estilos para cada elemento dentro del carrusel */
+.carousel-item-2 {
+    min-width: 100%; /* Cada elemento ocupa el 100% del ancho del carrusel */
+    height: 100%; /* Cada elemento ocupa el 100% de la altura del carrusel */
+    text-align: center; /* Alineación centrada del texto */
+    display: flex; /* Cambiado de 'center' a 'flex' */
+    flex-direction: column; /* Disposición en columna para los elementos dentro del item */
+    justify-content: center; /* Centrado de los elementos verticalmente */
+    align-items: center; /* Centrado de los elementos horizontalmente */
+}
+
+/* Estilos para las imágenes dentro de cada item del carrusel */
+.carousel-item-2 img {
+    margin-top: 50px;
+    width: 100%; /* Asegura que la imagen ocupe el 100% del ancho del carrusel */
+    height: 50%; /* La imagen ocupará toda la altura del item */
+    object-fit: contain; /* Asegura que la imagen se ajuste sin recortarse, manteniendo su proporción */
+    display: block; /* Elimina cualquier espacio en blanco debajo de la imagen */
+}
+
+
+/* Estilos para los botones del carrusel */
+.carousel-btn-2 {
+    position: absolute; /* Posicionamiento absoluto dentro del carrusel */
+    top: 50%; /* Centrado verticalmente en el carrusel */
+    transform: translateY(-50%); /* Ajusta el botón para que esté completamente centrado */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+    border: none; /* Sin borde */
+    color: #fff; /* Color de texto blanco */
+    padding: 10px 20px; /* Relleno del botón */
+    cursor: pointer; /* El puntero cambia al pasar sobre el botón */
+    font-size: 18px; /* Tamaño de la fuente */
+    z-index: 10; /* Asegura que el botón esté sobre los elementos del carrusel */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilos para el botón de la izquierda */
+.carousel-btn-2.left {
+    left: 10px; /* Botón posicionado a la izquierda */
+}
+
+/* Estilos para el botón de la derecha */
+.carousel-btn-2.right {
+    right: 10px; /* Botón posicionado a la derecha */
+}
+
+/* Efecto al pasar el cursor sobre los botones */
+.carousel-btn-2:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro al pasar el cursor */
+}
