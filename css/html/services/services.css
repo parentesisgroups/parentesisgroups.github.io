@@ -4,3 +4,11 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+
+.bg-gradient-custom {
+    background: linear-gradient(to right, rgb(37, 111, 248), aqua);
+}
+
+.custom_fs{
+    font-size: 1.8rem;
+}
