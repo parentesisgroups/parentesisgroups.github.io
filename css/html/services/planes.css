@@ -14,11 +14,7 @@
 
    }
    
-.card:hover {
-    transform: translateY(-1.5rem);
-    border: #04defff0 0.2em solid;
-    border-radius: 2.5rem 0 2.5rem 0;
-   }
+
 
 /* Switch planes */
 /* From Uiverse.io by cbolson */ 
