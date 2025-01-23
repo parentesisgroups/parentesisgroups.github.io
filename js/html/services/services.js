@@ -22,5 +22,11 @@ cargarHTML('../../html/menu/menu.html', 'menu-container');
 //  para cargar Componentes extras
 cargarHTML('../../html/rrss/rrss.html', 'rrss-contenedor');
 
+// Usamos JavaScript para cargar modulos
+cargarHTML('../../html/services/banner_servicios.html', 'banner_servicios');
+cargarHTML('../../html/services/planes.html', 'planes');
+cargarHTML('../../html/services/nuestro_servicio.html', 'nuestro_servicio');
+cargarHTML('../../html/services/por_que_nosotros.html', 'por_que_nosotros');
+
 // Usamos JavaScript para cargar el contenido del footer
 cargarHTML('../../html/footer/footer.html', 'footer-container');
