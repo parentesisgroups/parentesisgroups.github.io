@@ -7,7 +7,10 @@ const plans = [
 const servicios = [
     { title: "Consultoría", description: "Asesoramiento personalizado para tus proyectos." },
     { title: "Desarrollo a medida", description: "Creamos soluciones adaptadas a tus necesidades." },
-    { title: "Soporte técnico", description: "Resolución de problemas y mantenimiento continuo." }
+    { title: "Soporte técnico", description: "Resolución de problemas y mantenimiento continuo." },
+    { title: "SEO", description: "Resolución de problemas y mantenimiento continuo." },
+    { title: "Migración Hosting", description: "Resolución de problemas y mantenimiento continuo." }
+
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
